@@ -27,7 +27,7 @@ Cypress.Commands.add('logMessage', (selector) =>{
     cy.get(selector).should(($text) => {
         text = $text.text()
     }).then( () => {
-        cy.log("Test Logging:"+text)
+        cy.log("Logged output: "+text)
     })
 })
 
