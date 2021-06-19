@@ -1,6 +1,6 @@
 # qa-coding-challenge
 
-##Why use Cypress
+## Why use Cypress
 
 Cypress is the best answer to what if we can use the same tool for UI testing to also test APIs.
   
