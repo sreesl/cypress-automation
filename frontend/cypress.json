@@ -1,0 +1,7 @@
+{
+  "baseUrl": "https://www.demoblaze.com/",
+  "watchForFileChanges": false,
+  "testFiles": "**/*.{feature,features}",
+  "screenshotsFolder": "artifacts/screenshots"
+}
+
