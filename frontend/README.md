@@ -21,3 +21,4 @@ npm test
 ```sh
 npm test:debug
 ```
+Test results (screenshots and videos) are available in the folder cypress/artifacts
