@@ -1,4 +1,5 @@
 {
-  "baseUrl": "https://petstore.swagger.io/v2/pet",
-  "watchForFileChanges": false
+  "baseUrl": "https://petstore.swagger.io/v2",
+  "watchForFileChanges": false,
+  "failOnStatusCode": false
 }

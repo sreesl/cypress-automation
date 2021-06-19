@@ -1,25 +1,107 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import "@testing-library/cypress/add-commands"
+import "@bahmutov/cy-api/support"
+
+
+const uuid = () => Cypress._.random(0, 1e6);
+const id = uuid();
+const name = `testname${id}`;
+const catName = `catname${id}`;
+
+Cypress.Commands.add('addPet', () =>{
+    cy.log(name)
+    cy.log(catName)
+    cy.api({
+        method: 'POST',
+        url: '/pet',
+        headers: {
+            'Content-Type': 'application/json',
+            'accept': 'application/json'
+        },
+        body: {
+                "id": 0,
+                "category": {
+                    "id": 0,
+                    "name": catName
+                },
+                "name": name,
+                "photoUrls": [
+                    "string"
+                ],
+                "tags": [
+                    {
+                        "id": 0,
+                        "name": "string"
+                    }
+                ],
+                    "status": "available"
+            }
+    })
+})
+
+Cypress.Commands.add('updatePet', () =>{
+    cy.api({
+        method: 'PUT',
+        url: '/pet',
+        headers: {
+            'Content-Type': 'application/json',
+            'accept': 'application/json'
+        },
+        body: {
+            "id": 0,
+            "category": {
+                "id": 0,
+                "name": catName
+            },
+            "name": name,
+            "photoUrls": [
+                "string"
+            ],
+            "tags": [
+                {
+                    "id": 0,
+                    "name": "string"
+                }
+            ],
+            "status": "sold"
+        }
+    })
+})
+
+Cypress.Commands.add('findByStatus', (status) =>{
+    cy.api({
+        method: 'GET',
+        url: '/pet/findByStatus',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        qs: {
+            status: status
+        }
+    })
+})
+
+Cypress.Commands.add('getPet', (id) =>{
+    cy.api({
+        method: 'GET',
+        url: '/pet/'+id,
+        headers: {
+            'Content-Type': 'application/json',
+            'accept': 'application/json',
+            'api_key': 'special-key'
+        }
+    })
+})
+
+Cypress.Commands.add('deletePet', (id) =>{
+    cy.api({
+        method: 'DELETE',
+        url: '/pet/'+id,
+        failOnStatusCode: false,
+        headers: {
+            'Content-Type': 'application/json',
+            'accept': 'application/json',
+            'api_key': 'special-key'
+        }
+
+    })
+})
