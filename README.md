@@ -2,7 +2,9 @@
 
 ##Why use Cypress
 
+Cypress is the best answer to what if we can use the same tool for UI testing to also test APIs.
+  
 * No other dependencies required to run tests as Cypress contains everything you need.
 * Setup is minimal
-* Cypress supports BDD and TDD style assertion syntax so this would already be familiar to engineers who have used other JavaScript testing libraries.
-* Cypress Test Runner useful in debugging your tests. You can also directly inspect from Chrome dev tools.
+* Cypress supports BDD and TDD style assertion.
+* We can add a visual test runner for our API tests and also run it headlessly on the command line.
