@@ -1,0 +1,17 @@
+{
+  "name": "exercise-1",
+  "version": "1.0.0",
+  "description": "## Pre-requisites",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bahmutov/cy-api": "^1.5.0",
+    "cypress": "^7.5.0"
+  }
+}
