@@ -2,16 +2,22 @@
 
 ## Pre-requisites
 
-Latest version of nodejs
+To run the tests, please ensure you have the following installed:
 
-## Install Dependencies
+[NPM](https://www.npmjs.com/get-npm)
 
-```sh
-npm install
-```
+[NodeJS](https://nodejs.org/en/download)
 
-## Run tests
 
-```sh
-npm test
-```
+## How to run
+
+* Clone the repo and install the project dependencies ```npm install```
+
+* To run the tests on your terminal, run ```npm test```
+
+* To run the tests against the Cypress Test Runner, run ```npm test:debug```
+
+* Test results (screenshots and videos) are available in the folder cypress/artifacts
+
+
+
