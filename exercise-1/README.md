@@ -17,7 +17,5 @@ To run the tests, please ensure you have the following installed:
 
 * To run the tests against the Cypress Test Runner, run ```npm cy:open```
 
-* Test results (screenshots and videos) are available in the folder cypress/artifacts
-
 
 
