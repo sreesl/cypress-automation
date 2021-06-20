@@ -1,3 +1,5 @@
+const LosslessJSON = require('lossless-json');
+
 let petId;
 
 describe('Get available pets', () => {
@@ -33,6 +35,7 @@ describe('Post a new available pet', () => {
             cy.addPet().then((response) => {
                 expect(response.status).to.equal(200);
                 expect(response.body.id).is.not.null;
+                // actual id exceeds max integer value in JS and max.safe integer is returned now
                 petId=response.body.id;
             })
         })
@@ -65,7 +68,8 @@ describe('Delete a pet', () => {
             })
         })
 
-        it('it returns pet not found', () => {
+
+        it('GET PET returns pet not found', () => {
             cy.getPet(petId).then((response) => {
                 cy.log(JSON.stringify(response))
                 expect(response.status).to.eq(404)

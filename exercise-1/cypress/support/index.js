@@ -16,6 +16,7 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 import '@bahmutov/cy-api/support'
+import 'lossless-json'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

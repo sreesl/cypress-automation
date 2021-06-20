@@ -1,8 +1,7 @@
 import "@testing-library/cypress/add-commands"
-import "@bahmutov/cy-api/support"
 
 Cypress.Commands.add('findByStatus', (status) =>{
-    cy.api({
+    cy.request({
         method: 'GET',
         url: '/pet/findByStatus',
         headers: {
@@ -15,11 +14,11 @@ Cypress.Commands.add('findByStatus', (status) =>{
 })
 
 Cypress.Commands.add('getPet', (id) =>{
-    cy.api({
+    cy.request({
         method: 'GET',
         url: '/pet/'+id,
+        failOnStatusCode: false,
         headers: {
-            'Content-Type': 'application/json',
             'accept': 'application/json',
             'api_key': 'special-key'
         }
@@ -27,7 +26,7 @@ Cypress.Commands.add('getPet', (id) =>{
 })
 
 Cypress.Commands.add('addPet', () =>{
-    cy.api({
+    cy.request({
         method: 'POST',
         url: '/pet',
         headers: {
@@ -45,7 +44,7 @@ Cypress.Commands.add('addPet', () =>{
 })
 
 Cypress.Commands.add('updatePet', (petId) =>{
-    cy.api({
+    cy.request({
         method: 'PUT',
         url: '/pet',
         headers: {
@@ -64,13 +63,12 @@ Cypress.Commands.add('updatePet', (petId) =>{
 })
 
 Cypress.Commands.add('deletePet', (id) =>{
-    cy.api({
+    cy.request({
         method: 'DELETE',
         url: '/pet/'+id,
         failOnStatusCode: false,
         headers: {
             'Content-Type': 'application/json',
-            'accept': 'application/json',
             'api_key': 'special-key'
         }
 
