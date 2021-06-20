@@ -11,7 +11,7 @@ To run the tests, please ensure you have the following installed:
 
 ## ✅ How to run
 
-* Go to the [project's directory](https://github.com/sreesl/qa-coding-challenge/tree/main/exercise-2) and install the project dependencies using ```npm install```
+* Go to the [project's directory](/exercise-2) and install the project dependencies using ```npm install```
 
 * To run the tests on your terminal, run ```npm test```
 
