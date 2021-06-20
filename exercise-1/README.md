@@ -20,6 +20,7 @@ To run the tests, please ensure you have the following installed:
 
 ## 🧯 Risks/ Issues faced
 
-* The test Navigat
+* The API automation checks required as per the challenge for request types POST, PUT and DELETE makes the tests dependent on each other since we are asserting for the same pet_id in all cases. 
+This approach makes the checks brittle since failure of one case (POST) fails the rest (PUT, DELETE) which may be a false positive. We have to keep the tests independent of each other for better.
 
 
