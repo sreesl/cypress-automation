@@ -4,7 +4,7 @@
 
 - [Cypress](https://www.cypress.io/)
 
-## ⭐️ Why use Cypress
+### ⭐️ Why use Cypress
 
 Cypress is the best answer to what if we can use the same tool for UI testing to also test our APIs.
   
@@ -24,8 +24,10 @@ For WEB FRONTEND tests, check folder [exercise-2](./exercise-2).
 
 ![automation-results](assets/exercise-2_results.png)
 
-### ℹ️  Further Information
+### ℹ️ Further Information
 
 Details about how to run the api and ui tests, risks and issues are detailed in their respective READMEs.
 
+![automation-results](assets/exercise-1_results.png)
 
+![automation-results](assets/exercise-2_results.png)
