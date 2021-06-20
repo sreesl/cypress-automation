@@ -17,12 +17,12 @@ Cypress is the best answer to what if we can use the same tool for UI testing to
 
 For REST API tests, check folder [exercise-1](./exercise-1).
 
-![automation-results](assets/new/exercise-1_results.png)
+![automation-results](assets/exercise-1_results.png)
 
 
 For WEB FRONTEND tests, check folder [exercise-2](./exercise-2).
 
-![automation-results](assets/new/exercise-2_results.png)
+![automation-results](assets/exercise-2_results.png)
 
 ### ℹ️ Further Information
 
