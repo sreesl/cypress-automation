@@ -11,13 +11,13 @@ To run the tests, please ensure you have the following installed:
 
 ## ✅ How to run
 
-* Go to the [project's directory](/exercise-2) and install the project dependencies using ```npm install```
+* Go to the [project's directory](/exercise-2) and install the project dependencies, run ```npm install```
 
 * To run the tests on your terminal, run ```npm test```
 
 * To run the tests against the Cypress Test Runner, run ```npm cy:open```
 
-* Test results (screenshots and videos) are available in the folder cypress/artifacts for failed steps and also success purchase after the test run.
+* Test results (screenshots and videos) will be available in the folder cypress/artifacts for failed steps and also success purchase after the test run.
 
 
 ## 🧯 Risks/ Issues faced

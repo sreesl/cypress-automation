@@ -26,4 +26,4 @@ For WEB FRONTEND tests, check folder [exercise-2](./exercise-2).
 
 ### ℹ️ Further Information
 
-Details about how to run the api and ui tests, risks and issues are detailed in their respective READMEs.
+Details about how to run the api and ui tests, risks and issues faced are detailed in their respective READMEs.

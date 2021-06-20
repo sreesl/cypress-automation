@@ -13,11 +13,13 @@ To run the tests, please ensure you have the following installed:
 
 * Clone the repo ```git clone git@github.com:sreesl/qa-coding-challenge.git```
 
-* Go to the [project's directory](/exercise-1) and install the project dependencies using ```npm install```
+* Go to the [project's directory](/exercise-1) and install the project dependencies, run ```npm install```
 
 * To run the tests on your terminal, run ```npm test```
 
-* To run the tests against the Cypress Test Runner, run ```npm cy:open```
+* To run the tests against the Cypress Test Runner (interactive mode), run ```npm cy:open```
+
+* Test screenshots for failures will be available in the folder cypress/screenshots after test run.
 
 
 ## 🧯 Risks/ Issues faced
