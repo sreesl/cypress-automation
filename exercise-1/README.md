@@ -26,9 +26,13 @@ To run the tests, please ensure you have the following installed:
 This approach makes the checks brittle since failure of one case (POST) fails the rest (PUT, DELETE) which may be a false positive. We have to keep the tests independent of each other for better.
 
 * When we create a new pet (POST request), pet id exceeds what Javascript considers a safe integer. Because of this, the number is stored to the maximum available precision and we are always returned with id= 9223127596080651000.
-This complicates the further testing of Updating and deleting this newly created pet since we cant fetch the actual number. Swagger should have known this or dealt it by handling it as a string instead.
+This complicates the further testing of updating and deleting newly created pet since we cant fetch the actual id. Swagger should have known this or dealt it by handling it as a string instead.
 
-Delete a Pet test assertions are failing because of this.
+⚠️ Delete a pet test assertions are failing because of this.
+
+Screenshot of a test run with valid input:
+
+![Screenshot of a test run with valid inputs](../assets/exercise-1_results.png)
 
 
 
