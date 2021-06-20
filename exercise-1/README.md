@@ -13,7 +13,7 @@ To run the tests, please ensure you have the following installed:
 
 * Clone the repo ```git clone git@github.com:sreesl/qa-coding-challenge.git```
 
-* Go to the [project's directory](qa-coding-challenge/exercise-1) and install the project dependencies using ```npm install```
+* Go to the [project's directory](https://github.com/sreesl/qa-coding-challenge/tree/main/exercise-1) and install the project dependencies using ```npm install```
 
 * To run the tests on your terminal, run ```npm test```
 
