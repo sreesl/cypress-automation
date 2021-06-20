@@ -1,6 +1,6 @@
-# EXERCISE 1 – REST API AUTOMATION
+# ✍️ EXERCISE 1 – REST API AUTOMATION
 
-## Pre-requisites
+## 🤖 Pre-requisites
 
 To run the tests, please ensure you have the following installed:
 
@@ -9,7 +9,7 @@ To run the tests, please ensure you have the following installed:
 [NodeJS](https://nodejs.org/en/download)
 
 
-## How to run
+## ✅ How to run
 
 * Clone the repo and install the project dependencies ```npm install```
 
@@ -18,7 +18,7 @@ To run the tests, please ensure you have the following installed:
 * To run the tests against the Cypress Test Runner, run ```npm cy:open```
 
 
-## Issues faced
+## 🧯 Risks/ Issues faced
 
 * The test Navigat
 

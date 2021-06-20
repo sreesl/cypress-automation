@@ -1,6 +1,6 @@
-# EXERCISE 2 – WEB FE AUTOMATION
+# ✍️ EXERCISE 2 – WEB FE AUTOMATION
 
-## Pre-requisites
+## 🤖 Pre-requisites
 
 To run the tests, please ensure you have the following installed:
 
@@ -9,7 +9,7 @@ To run the tests, please ensure you have the following installed:
 [NodeJS](https://nodejs.org/en/download)
 
 
-## How to run
+## ✅ How to run
 
 * Clone the repo and install the project dependencies ```npm install```
 
@@ -20,7 +20,7 @@ To run the tests, please ensure you have the following installed:
 * Test results (screenshots and videos) are available in the folder cypress/artifacts for failed steps and also success purchase after the test run.
 
 
-## Risks/ Issues faced
+## 🧯 Risks/ Issues faced
 
 * Testability of the application is poor and hence affecting the stability of tests.  
 
