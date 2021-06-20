@@ -13,7 +13,7 @@ When('user clicks on {string}',(category) => {
 })
 
 Then('user should be displayed {string} with {int}',(product, number) => {
-    cy.get('.card').first().contains(product);
+    cy.contains(product);
     cy.get('#tbodyid').children().should('have.length', number);
 })
 
