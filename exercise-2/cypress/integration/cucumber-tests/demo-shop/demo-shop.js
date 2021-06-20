@@ -13,8 +13,8 @@ When('user clicks on {string}',(category) => {
 })
 
 Then('user should be displayed {string} with {int}',(product, number) => {
+    cy.get('.card').first().contains(product);
     cy.get('#tbodyid').children().should('have.length', number);
-    cy.get(':nth-child(1) > .card > .card-block > .card-title > .hrefch').contains(product);
 })
 
 Given('user navigates to Laptop category',() => {
@@ -63,7 +63,7 @@ And('user fills the form',() => {
 Then('user clicks on purchase',() => {
     cy.get('.btn-primary').contains('Purchase').click();
     cy.screenshot('success-purchase');
-    cy.logMessage('.lead')
+    cy.logPurchaseInfo('.lead')
 })
 
 And('user clicks on OK',() => {

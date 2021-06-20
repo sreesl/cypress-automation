@@ -22,12 +22,16 @@ Cypress.Commands.add('fillForm', (name, country, city, card, month, year) =>{
     cy.get('input[id=\'year\']').type(year)
 })
 
-Cypress.Commands.add('logMessage', (selector) =>{
+Cypress.Commands.add('logPurchaseInfo', (selector) =>{
     let text=""
     cy.get(selector).should(($text) => {
         text = $text.text()
+
     }).then( () => {
-        cy.log("Logged output: "+text)
+        let id=text.match("Id: \\d+")
+        cy.log(id[0])
+        let amount=text.match("Amount: \\d+ USD")
+        cy.log(amount[0])
     })
 })
 
