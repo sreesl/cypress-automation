@@ -18,4 +18,8 @@ To run the tests, please ensure you have the following installed:
 * To run the tests against the Cypress Test Runner, run ```npm cy:open```
 
 
+## Issues faced
+
+* The test Navigat
+
 
