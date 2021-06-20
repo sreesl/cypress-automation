@@ -44,7 +44,7 @@ Cypress.Commands.add('addPet', () =>{
     })
 })
 
-Cypress.Commands.add('updatePet', () =>{
+Cypress.Commands.add('updatePet', (petId) =>{
     cy.api({
         method: 'PUT',
         url: '/pet',
@@ -53,6 +53,7 @@ Cypress.Commands.add('updatePet', () =>{
             'accept': 'application/json'
         },
         body: {
+            "id": petId,
             "category": {
                 "name": "dinosaur"
             },
