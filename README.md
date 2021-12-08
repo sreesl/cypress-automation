@@ -1,4 +1,4 @@
-# QA CODING CHALLENGE 👩‍💻
+# LEARNING TASK 👩‍💻
 
 ### ⚒️ Tooling
 
